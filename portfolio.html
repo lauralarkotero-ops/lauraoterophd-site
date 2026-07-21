@@ -12,19 +12,23 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="/">Laura Otero, Ph.D.</a>
-    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('open')">&#9776;</button>
-    <nav class="main-nav">
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav" onclick="const n=document.getElementById('main-nav'); const open=n.classList.toggle('open'); this.setAttribute('aria-expanded', open);">&#9776;</button>
+    <nav class="main-nav" id="main-nav">
       <a href="/">Home</a>
       <a href="portfolio.html" class="active">Portfolio</a>
-      <a href="https://docs.google.com/document/d/1YFHhqkYdsZtw4tTYMUC6xlFDsok747qag2UU-plNzZY/edit" target="_blank" rel="noopener">CV</a>
+      <a href="https://docs.google.com/document/d/1YFHhqkYdsZtw4tTYMUC6xlFDsok747qag2UU-plNzZY/edit" target="_blank" rel="noopener">CV<span class="visually-hidden"> (opens in new tab)</span></a>
       <a href="contact.html">Contact</a>
-      <a class="icon-link" href="https://www.linkedin.com/in/lauralarkotero/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+      <a class="icon-link" href="https://www.linkedin.com/in/lauralarkotero/" target="_blank" rel="noopener">LinkedIn<span class="visually-hidden"> (opens in new tab)</span></a>
     </nav>
   </div>
 </header>
+
+<main id="main-content">
 
 <section class="hero">
   <div class="container">
@@ -46,7 +50,7 @@
         <div class="video-card-body">
           <span class="tag">Interactive eLearning &middot; 2025</span>
           <h3>Instructional Design Models: An Interactive Review</h3>
-          <p>An Articulate Rise microlearning lesson built for IDT 204, reviewing core instructional design models. <a href="lessons/idmodels/index.html" target="_blank" rel="noopener">Open full lesson &#8599;</a></p>
+          <p>An Articulate Rise microlearning lesson built for IDT 204, reviewing core instructional design models. <a href="lessons/idmodels/index.html" target="_blank" rel="noopener">Open full lesson &#8599;<span class="visually-hidden"> (opens in new tab)</span></a></p>
         </div>
       </div>
 
@@ -57,7 +61,7 @@
         <div class="video-card-body">
           <span class="tag">Interactive eLearning</span>
           <h3>Emerging Technologies in the Humanities: An Introduction</h3>
-          <p>An Articulate Rise lesson built for SJSU's International Gateways program. <a href="lessons/gateways/index.html" target="_blank" rel="noopener">Open full lesson &#8599;</a></p>
+          <p>An Articulate Rise lesson built for SJSU's International Gateways program. <a href="lessons/gateways/index.html" target="_blank" rel="noopener">Open full lesson &#8599;<span class="visually-hidden"> (opens in new tab)</span></a></p>
         </div>
       </div>
 
@@ -85,7 +89,7 @@
       <div class="project-body">
         <p><strong>Opportunity:</strong> As the online education coordinator, I led the digital learning initiative on campus to provide robust faculty training in delivering online instruction.</p>
         <p><strong>My role:</strong> I designed, developed, and delivered an Online Instruction Certification (OIC) training program for faculty and collaborated with senior leaders to drive buy-in and institutional support for faculty participation.</p>
-        <p><strong>Final Deliverable:</strong> View information about the <a href="https://csumb.edu/departments/it/center-for-academic-technologies/self-guided-professional-development/" target="_blank" rel="noopener">OIC on the CSUMB Academic Technology website</a>.</p>
+        <p><strong>Final Deliverable:</strong> View information about the <a href="https://csumb.edu/departments/it/center-for-academic-technologies/self-guided-professional-development/" target="_blank" rel="noopener">OIC on the CSUMB Academic Technology website<span class="visually-hidden"> (opens in new tab)</span></a>.</p>
       </div>
     </details>
 
@@ -94,7 +98,7 @@
       <div class="project-body">
         <p><strong>Opportunity:</strong> Each summer, the Center for Academic Technologies has the opportunity to develop courses for faculty development related to educational technology and online teaching. In 2023, Artificial Intelligence (AI) was the trending topic, but the webinars were getting repetitive, and faculty concerns were at an all-time high related to academic integrity and the inappropriate use of AI in the classroom.</p>
         <p><strong>My role:</strong> As instructional designer, I developed and facilitated a Summer Institute course built around ethical exploration and experiential learning: the more faculty experimented with AI tools hands-on, the better they understood both the limitations and the potential uses. Development took about six months: a needs analysis (faculty concerns, trade publications, market and trend research, and my own hands-on AI experience) informed a course map with outcomes scaffolded to Bloom's Taxonomy, followed by backward-designed assessments and learning activities. Input from peers, webinars, and forums along the way helped sharpen the final course. The cohort saw over 110 successful faculty completions.</p>
-        <p><strong>Final Deliverable:</strong> View the <a href="https://docs.google.com/spreadsheets/d/1chT98E0_3uZ5DtUCzL9gQUa1Q3-5k0dRZJn6uZPKIGc/view" target="_blank" rel="noopener">course map</a> (a recorded course tour may be available by request, and a list of external institutions that have adopted this course is also available by request.)</p>
+        <p><strong>Final Deliverable:</strong> View the <a href="https://docs.google.com/spreadsheets/d/1chT98E0_3uZ5DtUCzL9gQUa1Q3-5k0dRZJn6uZPKIGc/view" target="_blank" rel="noopener">course map<span class="visually-hidden"> (opens in new tab)</span></a> (a recorded course tour may be available by request, and a list of external institutions that have adopted this course is also available by request.)</p>
       </div>
     </details>
 
@@ -103,7 +107,7 @@
       <div class="project-body">
         <p><strong>Opportunity:</strong> In 2019, Hartnell College was awarded over $30,000 to spend on Classified Staff Professional Development.</p>
         <p><strong>My role:</strong> I volunteered to join the committee tasked with managing those funds, and was elected chair. As chair, I led the process of designing a new program that we called the Classified Staff Leadership Academy. The primary purpose of the funding was to provide career laddering and professional development programming for classified staff, and we essentially followed a backward design process for the Academy: we assessed the managerial job descriptions across the district, identified similar requirements across all management classifications, and designed an academy that would help staff gain those specific skills so they would be prepared for leadership positions in our district.</p>
-        <p><strong>Final Deliverable:</strong> <a href="https://www.hartnell.edu/hr/pdp/cla/index.html" target="_blank" rel="noopener">Hartnell College Classified Leadership Academy Program</a> (if the link no longer works, request a copy of the archived webpage.)</p>
+        <p><strong>Final Deliverable:</strong> <a href="https://www.hartnell.edu/hr/pdp/cla/index.html" target="_blank" rel="noopener">Hartnell College Classified Leadership Academy Program<span class="visually-hidden"> (opens in new tab)</span></a> (if the link no longer works, request a copy of the archived webpage.)</p>
         <div class="video-embed" style="margin: 16px 0;">
           <iframe src="https://www.youtube.com/embed/13y5sgLNNhA" title="Classified Leadership Academy Program Development" allowfullscreen loading="lazy"></iframe>
         </div>
@@ -178,7 +182,7 @@
       <div class="project-body">
         <p><strong>Opportunity:</strong> After various instructors engaged in the CSUMB AI Summer course, leaders in the California State University system voiced interest in adopting the same course and rolling it out CSU-wide.</p>
         <p><strong>My role:</strong> As the course author, I made it available to the CSU and provided recommendations and support for scaling it for CSU-wide deployment. I worked with stakeholders in the Chancellor's Office to collaboratively identify and train instructors across the CSU to facilitate sections (10 sections to start) and updated the course annually (2023-2025) to ensure the content was up-to-date.</p>
-        <p><strong>Final Deliverable:</strong> View the <a href="https://genai.calstate.edu/training/systemwide-canvas-ai-courses-students-faculty-staff-and-alumni" target="_blank" rel="noopener">Introduction to Teaching with AI</a> on the CSU AI commons webpage. Thousands have successfully completed the course.</p>
+        <p><strong>Final Deliverable:</strong> View the <a href="https://genai.calstate.edu/training/systemwide-canvas-ai-courses-students-faculty-staff-and-alumni" target="_blank" rel="noopener">Introduction to Teaching with AI<span class="visually-hidden"> (opens in new tab)</span></a> on the CSU AI commons webpage. Thousands have successfully completed the course.</p>
       </div>
     </details>
 
@@ -187,7 +191,7 @@
       <div class="project-body">
         <p><strong>Opportunity:</strong> The CSU Chancellor's Office offers grant funding to drive the adoption of quality online teaching frameworks on campus.</p>
         <p><strong>My role:</strong> As the campus Online Education Coordinator, I proposed a program in alignment with University initiatives and grant requirements to incentivize faculty participation in Quality Matters (QM) training to increase institutional knowledge and skills in quality online course best practices.</p>
-        <p><strong>Final Deliverable:</strong> The grant was awarded and met all goals for AY 2022-23 and 2023-24. Additionally, an expanded program was proposed and awarded for 2025. View the <a href="https://csumb.edu/cat/quality-courses/qmarchive/" target="_blank" rel="noopener">institutional Quality Matters program report archive</a>.</p>
+        <p><strong>Final Deliverable:</strong> The grant was awarded and met all goals for AY 2022-23 and 2023-24. Additionally, an expanded program was proposed and awarded for 2025. View the <a href="https://csumb.edu/cat/quality-courses/qmarchive/" target="_blank" rel="noopener">institutional Quality Matters program report archive<span class="visually-hidden"> (opens in new tab)</span></a>.</p>
       </div>
     </details>
 
@@ -209,13 +213,15 @@
     <h2>Conference Presentations</h2>
 
     <ul class="simple-list">
-      <li><a href="https://detche.com/2023-det-che-38-details/" target="_blank" rel="noopener">Opening Pandora's Box: Developing AI Training for Higher Ed</a><span class="venue">DET/CHE &middot; 2023</span></li>
-      <li><a href="https://detche.com/2023-det-che-38-details/" target="_blank" rel="noopener">Building Relationships Between Instructional Designers and Faculty Through Exemplary Leadership</a><span class="venue">DET/CHE &middot; 2023</span></li>
-      <li><a href="https://accessinghigherground.org/digital-accessibility-equity-building-self-paced-professional-development-opportunities-for-faculty/" target="_blank" rel="noopener">Digital Accessibility &amp; Equity: Building Self-Paced Professional Development Opportunities for Faculty</a><span class="venue">AHEAD AHG &middot; 2023</span></li>
-      <li><a href="https://sites.google.com/view/peraltaequityconference/2023-conference/2023-program/2023-apr-28-sessions?authuser=0" target="_blank" rel="noopener">BUILD Poster Session: Building Self-Paced Professional Development Opportunities for Faculty</a><span class="venue">Peralta Equity Conference &middot; 2023</span></li>
+      <li><a href="https://detche.com/2023-det-che-38-details/" target="_blank" rel="noopener">Opening Pandora's Box: Developing AI Training for Higher Ed<span class="visually-hidden"> (opens in new tab)</span></a><span class="venue">DET/CHE &middot; 2023</span></li>
+      <li><a href="https://detche.com/2023-det-che-38-details/" target="_blank" rel="noopener">Building Relationships Between Instructional Designers and Faculty Through Exemplary Leadership<span class="visually-hidden"> (opens in new tab)</span></a><span class="venue">DET/CHE &middot; 2023</span></li>
+      <li><a href="https://accessinghigherground.org/digital-accessibility-equity-building-self-paced-professional-development-opportunities-for-faculty/" target="_blank" rel="noopener">Digital Accessibility &amp; Equity: Building Self-Paced Professional Development Opportunities for Faculty<span class="visually-hidden"> (opens in new tab)</span></a><span class="venue">AHEAD AHG &middot; 2023</span></li>
+      <li><a href="https://sites.google.com/view/peraltaequityconference/2023-conference/2023-program/2023-apr-28-sessions?authuser=0" target="_blank" rel="noopener">BUILD Poster Session: Building Self-Paced Professional Development Opportunities for Faculty<span class="visually-hidden"> (opens in new tab)</span></a><span class="venue">Peralta Equity Conference &middot; 2023</span></li>
     </ul>
   </div>
 </section>
+
+</main>
 
 <footer class="site-footer">
   <div class="container">

@@ -12,19 +12,23 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="/">Laura Otero, Ph.D.</a>
-    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('open')">&#9776;</button>
-    <nav class="main-nav">
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav" onclick="const n=document.getElementById('main-nav'); const open=n.classList.toggle('open'); this.setAttribute('aria-expanded', open);">&#9776;</button>
+    <nav class="main-nav" id="main-nav">
       <a href="/" class="active">Home</a>
       <a href="portfolio.html">Portfolio</a>
-      <a href="https://docs.google.com/document/d/1YFHhqkYdsZtw4tTYMUC6xlFDsok747qag2UU-plNzZY/edit" target="_blank" rel="noopener">CV</a>
+      <a href="https://docs.google.com/document/d/1YFHhqkYdsZtw4tTYMUC6xlFDsok747qag2UU-plNzZY/edit" target="_blank" rel="noopener">CV<span class="visually-hidden"> (opens in new tab)</span></a>
       <a href="contact.html">Contact</a>
-      <a class="icon-link" href="https://www.linkedin.com/in/lauralarkotero/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+      <a class="icon-link" href="https://www.linkedin.com/in/lauralarkotero/" target="_blank" rel="noopener">LinkedIn<span class="visually-hidden"> (opens in new tab)</span></a>
     </nav>
   </div>
 </header>
+
+<main id="main-content">
 
 <section class="hero home-hero">
   <div class="container hero-grid">
@@ -41,9 +45,8 @@
 <section class="bio">
   <div class="container">
     <p>My research looks at the professional identity and evolving role of instructional designers in higher education: specifically, how generative AI is reshaping our ability to collaborate with faculty, build social capital, and lead change inside academic institutions. As AI absorbs more of the technical work of course design, I study what that means for human expertise, professional credibility, and the future of the field.</p>
-    <p>That research is grounded in my own experience leading change on the ground, as an instructional designer and educational technologist at Hartnell College, CSU Monterey Bay (where I served as Online Education Coordinator and adjunct faculty), and the Naval Postgraduate School's NPS Extended Campus, and now as an Assistant Professor at San José State University, where I also serve as Program Coordinator for the <a href="https://ischool.sjsu.edu/master-science-instructional-design-and-technology" target="_blank" rel="noopener">Master of Science in Instructional Design and Technology (MSIDT)</a> program. See this work in practice in my <a href="portfolio.html">portfolio</a>, or view my full <a href="https://docs.google.com/document/d/1YFHhqkYdsZtw4tTYMUC6xlFDsok747qag2UU-plNzZY/edit" target="_blank" rel="noopener">CV</a>.</p>
-    <p>I hold a Ph.D. in Leadership with a specialization in Instructional Technology from the University of the Cumberlands, a Master's in Education from CSU East Bay, and a Bachelor's in Communication from CSU Monterey Bay, after transferring from a California Community College.</p>
-    <p>I'm based in Monterey, California, with my husband, daughter, and our menagerie of creatures and plants. I'm also a creative writer. You can find that work at <a href="https://www.elleotero.com/" target="_blank" rel="noopener">elleotero.com</a>.</p>
+    <p>That research is grounded in my own path through the field: as an instructional designer and educational technologist at Hartnell College and CSU Monterey Bay (where I served as Online Education Coordinator and adjunct faculty), then at the Naval Postgraduate School's NPS Extended Campus, and now as an Assistant Professor and Program Coordinator for the <a href="https://ischool.sjsu.edu/master-science-instructional-design-and-technology" target="_blank" rel="noopener">Master of Science in Instructional Design and Technology (MSIDT)<span class="visually-hidden"> (opens in new tab)</span></a> program at San José State University. I hold a Ph.D. in Leadership with a specialization in Instructional Technology from the University of the Cumberlands, a Master's in Education from CSU East Bay, and a Bachelor's in Communication from CSU Monterey Bay. See this work in practice in my <a href="portfolio.html">portfolio</a>, or view my full <a href="https://docs.google.com/document/d/1YFHhqkYdsZtw4tTYMUC6xlFDsok747qag2UU-plNzZY/edit" target="_blank" rel="noopener">CV<span class="visually-hidden"> (opens in new tab)</span></a>.</p>
+    <p>I'm based in Monterey, California, with my husband, daughter, and our menagerie of creatures and plants. I'm also a creative writer. You can find that work at <a href="https://www.elleotero.com/" target="_blank" rel="noopener">elleotero.com<span class="visually-hidden"> (opens in new tab)</span></a>.</p>
   </div>
 </section>
 
@@ -74,6 +77,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <footer class="site-footer">
   <div class="container">
