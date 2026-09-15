@@ -430,6 +430,62 @@ section.tinted {
   letter-spacing: 0.01em;
 }
 
+/* ---------- Video hero (Featured project trailer banner) ---------- */
+
+.video-hero {
+  position: relative;
+  height: 460px;
+  overflow: hidden;
+  background: var(--navy-deep);
+}
+
+@media (max-width: 780px) {
+  .video-hero { height: 320px; }
+}
+
+.video-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15,30,44,0.25) 0%, rgba(15,30,44,0.92) 100%);
+}
+
+.video-hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 36px;
+}
+
+.video-hero-content h2 { color: #fff; margin-bottom: 8px; }
+
+.video-hero-content p {
+  color: rgba(255,255,255,0.85);
+  max-width: 640px;
+  margin-bottom: 0;
+}
+
+.video-hero-content a { color: #9fc4e0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .video-hero-bg { display: none; }
+  .video-hero {
+    background-image: url('driftwood-poster.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 /* ---------- Portfolio: category groups ---------- */
 
 .category-group { margin-bottom: 44px; }
