@@ -252,7 +252,7 @@ nav.main-nav .icon-link {
 
 .home-hero {
   background:
-    linear-gradient(135deg, rgba(15,30,44,0.88) 0%, rgba(30,74,109,0.82) 100%),
+    linear-gradient(135deg, rgba(15,30,44,0.55) 0%, rgba(30,74,109,0.45) 100%),
     url('monterey-harbor-bg.jpg');
   background-size: cover;
   background-position: center;
