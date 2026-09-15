@@ -251,7 +251,11 @@ nav.main-nav .icon-link {
 /* ---------- Home hero: navy treatment ---------- */
 
 .home-hero {
-  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--accent) 100%);
+  background:
+    linear-gradient(135deg, rgba(15,30,44,0.88) 0%, rgba(30,74,109,0.82) 100%),
+    url('monterey-harbor-bg.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .home-hero::before {
