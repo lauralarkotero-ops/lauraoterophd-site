@@ -354,7 +354,7 @@ section.tinted {
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 28px;
 }
 
@@ -402,7 +402,7 @@ section.tinted {
 
 .lesson-embed {
   position: relative;
-  height: 520px;
+  height: 620px;
   background: #101b26;
 }
 
@@ -413,7 +413,7 @@ section.tinted {
 }
 
 @media (max-width: 780px) {
-  .lesson-embed { height: 420px; }
+  .lesson-embed { height: 460px; }
 }
 
 .video-card-body { padding: 18px 20px; }
